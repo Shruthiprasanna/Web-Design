@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>House MD</title>
+	<link rel="icon" type="image/jpg" href="../images/Logo.jpg">
+	<link rel="stylesheet" href="../styles/feedback.css">
+</head>
+
+<body>
+	<header>
+		<div id=headerLogo>
+			<a href="../index.html"><img src="../Images/HouseMDLogo.jpg" alt="House Logo" width="100px"
+					height="80px"></a>
+			<a href="../index.html"><img src="../Images/HouseMD.jpg" alt="House Logo" width="240" height="80px"></a>
+		</div>
+		<a href="../index.html"><img id="HouseImage" src="../Images/EL.jpg" alt="House Logo" width="200"
+				height="80px"></a>
+	</header>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="Table.html">About</a></li>
+			<li><a href="Images.html">Cast</a></li>
+			<li><a href="Seasons.html">Seasons</a>
+				<ul>
+					<li><a href="Pages/Season1.html">Season 1</a></li>
+					<li><a href="Pages/Season1.html">Season 2</a></li>
+					<li><a href="Pages/Season3.html">Season 3</a>
+						<ul>
+							<li><a href="Pages/Episode1.html">Insensitive</a></li>
+							<li><a href="Pages/Episode2.html">Airborne</a></li>
+							<li><a href="Pages/Episode2.html">Family</a></li>
+							<li><a href="Pages/Episode2.html">Resignation</a></li>
+						</ul>
+					</li>
+					<li><a href="Pages/Season4.html">Season 4</a></li>
+					<li><a href="Pages/Season1.html">Season 5</a></li>
+					<li><a href="Pages/Season2.html">Season 6</a></li>
+					<li><a href="Pages/Season3.html">Season 7</a></li>
+					<li><a href="Pages/Season4.html">Season 8</a></li>
+				</ul>
+			</li>
+			<li><a href="feedback.html" class="current">Feedback</a></li>
+		</ul>
+	</nav>
+	<main div id="container">
+		<aside class="left">
+			<nav id="nav_list">
+				<ul>
+					<li>
+						<figure>
+							<a href="../index.html"><img src="../ThumbNails/Home.jpg" alt="House Pic" width="100"
+									height="80"></a>
+							<figcaption>Home</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<a href="Table.html"><img src="../ThumbNails/DrHouse2.png" alt="About House Pic" width="100"
+									height="80"></a>
+							<figcaption>About</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<a href="Images.html"><img src="../ThumbNails/team.jpg" alt="Cast Pic" width="100"
+									height="80"></a>
+							<figcaption>Cast</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<a href="Seasons.html"><img src="../ThumbNails/Seasons.jpg" alt="Seasons Pic" width="100" height="80"></a>
+							<figcaption>Seasons</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<a href="feedback.html"><img src="../ThumbNails/Feedback.png" alt="Feedback Pic" width="100"
+									height="80"></a>
+							<figcaption>Feedback</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<aside class="right">
+			<!-- Aside floating to the right-->
+			<form>
+				<fieldset>
+					<legend>Tell us your experience</legend><br>
+					<input type="checkbox" name="option1" value="fun">Fun to visit<br>
+					<input type="checkbox" name="option2" value="design">Well designed<br>
+					<input type="checkbox" name="option3" value="colors">Good color scheme<br>
+					<input type="checkbox" name="option4" value="navigate">Easy to navigate<br><br>
+				</fieldset><br><br>
+				<fieldset>
+					<legend>Will you visit us again?</legend><br>
+					<li  style="list-style:none;">
+						<input type="radio" name="visit" value="yes" />Yes
+						<input type="radio" name="visit"	value="no" />No
+					</li>
+					<!-- <label id="style"><input type="radio" class="radio" name="visit" value="yes">YES<br></label>
+					<label id="style"><input type="radio" name="visit" value="no">NO</label><br> -->
+				</fieldset>
+			</form>
+
+		</aside> <!-- Aside end-->
+
+		<article class="article">
+			<form id="option" action="feedback.php" method="post">
+				<p>Please enter the following details to subscribe to our page.</p><br>
+				<label for="name">Name :</label>
+				<input type="text" id="name" : autofocus><br><br>
+				<label for="email">E-Mail :</label>
+				<input type="text" id="email"><br><br>
+				<label for="country">Country :</label>
+
+				<select id="style_size">
+					<optgroup label="Canada">
+						<option value="p1">Ontario</option>
+						<option value="p2">British Columbia</option>
+						<option value="p3">Alberta</option>
+					</optgroup>
+					<optgroup label="USA">
+						<option value="east">East-Coast</option>
+						<option value="west">West-Coast</option>
+						<option value="central">Central-America</option>
+					</optgroup><br>
+				</select><br><br>
+
+				<label for="Subscription_plan">Plan :</label>
+				<select class="list" name="subscription" size="4" multiple>
+					<option value="daily">Daily</option>
+					<option value="weekly">Weekly</option>
+					<option value="bi-weekly">Bi-Weekly</option>
+					<option value="monthly">Monthly</option>
+					<option value="yearly">Yearly</option>
+				</select><br><br>
+
+				<label for="comments">Comments:<br></label>
+				<textarea id="comments" placeholder="If you have comments, please enter them here."></textarea>
+				<br><br>
+				<input id="button" type="submit" value="Submit">&nbsp &nbsp &nbsp
+				<input id="button" type="reset" value="Reset">
+			</form>
+		</article>
+	</main>
+
+	<footer>
+		<p>&copy; 2019&nbsp Created By: &nbsp<a href="mailto:Shruti@conestogac.on.ca"
+				title="Contact through email">Shruti Geeta</a></p>
+	</footer>
+</body>
+
+</html>

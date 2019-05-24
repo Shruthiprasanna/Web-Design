@@ -1,0 +1,297 @@
+html {
+  background-image: radial-gradient(
+    ellipse at center,
+    rgb(255, 255, 255) 0%,
+    rgb(0, 125, 197) 47%,
+    rgb(255, 255, 255) 100%
+  );
+  height: auto;
+  overflow: auto;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  border: 2px;
+  box-shadow: 0 3px 10px 5px;
+  height: 100%;
+  max-height: auto;
+  overflow: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 47%,
+    rgb(0, 0, 0) 100%
+  );
+  height: 85px;
+}
+
+#headerLogo {
+  float: left;
+}
+
+
+#HouseImage {
+  float: right;
+  padding-top: 0px;
+}
+
+header h2 {
+  font-size: 200%;
+  padding-bottom: 10px;
+}
+
+header h3 {
+  font-size: 130%;
+  padding-bottom: 20px;
+  text-decoration: italic;
+}
+
+/* Navigation menu */
+#nav_menu {
+  width: 100%;
+  float: left;
+  margin: 0 0 0 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+#nav_menu ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+#nav_menu ul li {
+  float: left;
+  width: 20%;
+}
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+#nav_menu ul ul li {
+  float: none;
+  position: relative;
+}
+
+#nav_menu ul li:hover > ul {
+  display: block;
+}
+#nav_menu > ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#nav_menu ul {
+  margin: 0;
+  padding: 0;
+}
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0.7em 0;
+  text-decoration: none;
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+#nav_menu ul ul li ul {
+  position: absolute;
+  right: -100%;
+  top: 0;
+}
+
+#nav_menu ul li ul li {
+  position: relative;
+  top: 0;
+  width: 200px;
+  z-index: 1000;
+}
+
+#nav_menu ul li a.current {
+  color: red;
+}
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+  background-color: rgb(59, 59, 59);
+}
+
+
+/* Container that holds left aside, right aside and article */
+#container {
+  height: 100%;
+  max-height: auto;
+  overflow: auto;
+  position: relative;
+  clear: both;
+}
+
+/* Left Sidebar */
+.left {
+  float: left;
+  width: 140px;
+  position: relative;
+  margin: 0;
+  border: 0px solid black;
+  background-color: #303030;
+  height: 100vh;
+  overflow: auto;
+}
+
+#nav_list ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+#nav_list ul li {
+  font-size: 1em;
+  float: left;
+  margin-bottom: 1em;
+}
+
+#nav_list ul li a {
+  color: #ffa07a;
+  text-decoration: none;
+}
+
+#nav_list ul li figure {
+  display: block;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border: 2px solid rgb(126, 126, 126);
+  border-color: #505050;
+}
+
+/* Right Sidebar */
+aside.right {
+  float: right;
+  width: 240px;
+  position: relative;
+  margin: 0;
+  border: 0px solid black;
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  overflow: auto;
+}
+
+ul.circle {
+  list-style-type: disc;
+  text-decoration: none;
+  display: block;
+  padding-right: 10px;
+  margin: 0.5em 0;
+  text-align: left;
+  color: solid black;
+  line-height: 2.5em;
+}
+
+.circle li a {
+  text-decoration: none;
+}
+
+/*Article in the middle with contents inside*/
+.article {
+  margin: 0em 2em;
+  margin-left: 140px;
+  margin-right: 110px;
+  font-family: Arial;
+  font-size: 1.1em;
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  padding: 0px 25px 0px 25px;
+  font-family: Sans-Serif, Arial, Helvetica;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+.article p {
+  margin-top: 0.5em;
+}
+
+/* Footer */
+footer {
+  clear: both;
+  border-top: 1px solid rgb(20, 20, 20);
+  padding: 15px;
+  background-color: #303030;
+}
+
+footer a {
+  font-size: 90%;
+  color: #06b7fd;
+  text-align: center;
+}
+
+footer p {
+  font-size: 90%;
+  color: #fdaf06;
+  text-align: center;
+}
+
+ .right input{
+	width: 2em;
+	margin-left: 0;
+	margin-bottom: .5em;
+	padding:0;
+}
+
+#option input,select{
+	width:20em;
+	margin-left:1em;
+	margin-bottom: .5em;	
+}
+
+textarea{
+	height: 7em;
+	width: 45em;
+	margin-left:1em;
+	margin-bottom: .5em;
+	
+}
+
+#option label{
+	float:left;
+	width:5em;
+	font-weight:bold;
+	text-align:right;
+}
+
+.list{
+	margin:1em;
+	margin-bottom: .5em;
+}
+
+#button{
+	margin-left: 5em;
+	width: 8em;
+	border: 2px solid black;
+	height: 2em;
+}
