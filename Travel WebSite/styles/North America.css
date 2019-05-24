@@ -1,0 +1,294 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#fcfcfc;
+	font-family:Arial, Helvetica, sans-serif;
+	background-image: url(../images/Background2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header img{
+	float: left;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color: #FFA07A;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:2.5em;
+	padding:0.5em 0 0;
+	margin-left: 4em;
+	text-transform:uppercase;
+	color:white;
+	font-family:Bebas Neue;
+}
+
+
+h3{
+	/* The slogan text */
+	font-family:Bebas Neue;
+	font-size:1.5em;
+	font-style:italic;
+	font-weight:normal;
+	margin-bottom: 1em;
+	margin-left: 7em;
+	color:white;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+h4{
+	font-size: 1.2em;
+	color: white;
+    text-transform: uppercase;
+	padding:0px 5px 5px 2px;
+	color:white;
+}
+
+.go_up {
+	float: right; 
+	padding-right: 15px; 
+	color: #fcfcfc;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+	padding-top:1em;
+	font-family: Arial;
+	font-size: 1.1em;
+	font-family:Sans-Serif, Arial, Helvetica;
+}
+
+.pbold{
+	font-size:1em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+	float:right;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background-color: rgba(255,255,255,0.25); 
+	padding:0px 3px;
+	position:relative;
+	right:0;
+	top:0;
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline-block;
+	padding-left: 70px;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#333333;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 0px;
+	padding:7px 10px 4px;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, section, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Section styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+.main{
+	background-image: linear-gradient(to right bottom, #3e5d6b, #466d81, #4f7e98, #598eb0, #659fc8);
+	margin: 2em 0;
+	padding: 20px;
+	text-shadow:0 1px 0 black;
+	width: 920px;
+}
+
+/*Aside Styles*/
+
+aside {
+	width: 100px;
+	float: left;
+	padding: 0px 10px 0px 0px;
+	margin: .5em 0;
+	}
+	
+
+aside ul li{
+	font-size: 1.3em;
+	display: block;
+    padding: 5px;
+	margin: 1em 0;
+	text-align:left;
+	color: #FFA07A;
+}
+
+aside.right {
+	float:right;
+}
+
+.right ul li{
+	display: block;
+    padding: 10px;
+	margin: 1em 0;
+	font-weight: bold;
+	text-align:center;
+	color: #FFA07A;
+}
+
+/*Article Styles*/
+
+.article{
+	margin:0 2em 1em 1em;
+	padding: 0 20px 10px 20px;
+	width: 650px;
+	margin-left:130px;
+	margin-right:130px;
+}
+
+article img{
+	border:2px solid #142830;
+	margin-left: .3em;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:1em;
+	font-weight: bold;
+	color:black;
+	clear: both;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+	clear: both;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
+
+
+
+
+
